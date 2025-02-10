@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--version HTML 5-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--tire lien google-->
+    <title>Google</title>
+
+    <!--Description google-->
+    <meta name="description" content="description">
+
+    <!--Lien vers le fichier CSS-->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form action="">
+        <h1>Inscrivez-vous au Ultimate Gaming Contest !</h1>
+        <p>Participez et tentez de remporter des récompenses incroyables !</p>
+        <div>
+            <label for="nom">Nom complet</label>
+            <input class="formulaire" type="text" name="nom" id="nom" placeholder="Entrez votre nom">
+        </div>
+        <div>
+            <label for="email">Adresse email </label>
+            <input class="formulaire" type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <div>
+                <label for="pseudo">Pseudo</label>
+                <input class="formulaire" type="text" name="pseudo" id="pseudo">
+            </div>
+            <label for="tel">Téléphone</label>
+            <input class="formulaire" type="tel" name="tel" id="tel" pattern="[0-9](10)">
+        </div>
+        <div>
+            <label for="naissance">Date de naissance</label>
+            <input class="formulaire" type="date" name="naissance" id="naissance">
+        </div>
+        <div>
+            <label for="nbGelule">Jeu préféré</label>
+            <select class="formulaire" name="nbGelule" id="nbGelule">
+                <option value="1">Diablo</option>
+                <option value="2">Path of exile</option>
+                <option value="3">Starcraft 2</option>
+            </select>
+        </div>
+        <div>
+            <h2>Plateforme</h2>
+            <div class="plateforme">
+                <div>
+                    <input type="radio" name="music" id="music1"><label for="music1">PC</label>
+                </div>
+                <div>
+                    <input type="radio" name="music" id="music2"><label for="music2">Console</label>
+                </div>
+                <div>
+                    <input type="radio" name="music" id="music3"><label for="music3">Mobile</label>
+                </div>
+
+            </div>
+            <div>
+                <input type="checkbox" name="cgv" id="cgv" required>
+                <label for="cgv">J'accepte les<a target="_blank" href="https://www.mozilla.org/fr/">
+                        <u><strong class="strong">conditions générales</strong></u></label></a>
+            </div>
+        </div>
+        <input class="button" type="submit" value="Je m'inscris !">
+    </form>
+</body>
+
+</html>
